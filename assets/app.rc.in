@@ -1,0 +1,34 @@
+#pragma code_page(65001)
+#include <windows.h>
+
+// 应用图标（路径由 CMake configure_file 注入，跨机器可移植）
+IDI_APPICON ICON "@APP_ICON@"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "BiliFetch"
+            VALUE "FileDescription", "BiliFetch - B站内容抓取桌面工具"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "BiliFetch"
+            VALUE "LegalCopyright", "Copyright (C) 2026 BiliFetch contributors. MIT License."
+            VALUE "OriginalFilename", "BiliFetch.exe"
+            VALUE "ProductName", "BiliFetch"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
